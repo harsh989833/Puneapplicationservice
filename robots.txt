@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harsh989833.github.io/pune-home-appliance-services/sitemap.xml
