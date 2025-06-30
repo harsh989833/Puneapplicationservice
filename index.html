@@ -1,178 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="google-site-verification" content="iGeKmD2fV7Wgq9_wwZJyRrT8EaokojWPvXO_Uy5iRis" />
   <title>Pune Home Appliance Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f4f6f9;
       color: #333;
     }
-
     header {
-      background-color: #004d40;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
       color: white;
+      padding: 60px 20px 40px;
       text-align: center;
-      padding: 30px 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-
     header h1 {
-      margin: 0;
-      font-size: 28px;
+      font-size: 2.5rem;
     }
-
     header p {
-      margin: 10px 0 0;
-      font-size: 16px;
+      font-size: 1.1rem;
+      margin-top: 8px;
     }
-
     .cta-button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #25D366;
+      background: #25d366;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 12px 24px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 30px;
       font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s ease;
     }
-
+    .cta-button:hover {
+      background: #128c7e;
+    }
     section {
-      padding: 40px 20px;
-      text-align: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
-
-    .service-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
     }
-
     .service-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 280px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .service-card img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-
-    .service-card h3 {
-      color: #00796b;
-      margin-bottom: 10px;
-    }
-
-    .reviews {
-      background-color: #e0f2f1;
-      padding: 40px 20px;
-    }
-
-    .review-card {
       background: white;
-      margin: 10px auto;
-      padding: 20px;
-      max-width: 600px;
-      border-left: 5px solid #00796b;
-      border-radius: 5px;
-      text-align: left;
-    }
-
-    .review-card strong {
-      display: block;
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    footer {
-      background-color: #004d40;
-      color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      padding: 24px;
       text-align: center;
-      padding: 15px;
+      transition: transform 0.3s ease;
     }
-
-    @media (max-width: 768px) {
-      .service-container {
-        flex-direction: column;
-        align-items: center;
-      }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+    .service-card img {
+      width: 180px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card img:hover {
+      transform: scale(1.05);
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .reviews {
+      background: #e6f9f2;
+      border-left: 5px solid #25d366;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #0f1d26;
+      color: #ffc107;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Pune Home Appliance Services</h1>
+    <p>Expert Repair for Fridge, Washing Machine & Microwave – 16 Years of Trust</p>
+    <a href="https://wa.me/917498612341" class="cta-button">Contact on WhatsApp</a>
+  </header>
 
-<header>
-  <h1>Pune Home Appliance Services</h1>
-  <p>Expert Repair for Fridge, Washing Machine & Microwave – 16 Years of Trust</p>
-  <a href="https://wa.me/7498612341" class="cta-button" target="_blank">Contact on WhatsApp</a>
-</header>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="service-container">
-
-    <div class="service-card">
-      <img src="https://i.ibb.co/NnQCjmvR/file-00000000c0b061fda9c8cd9ea75c8421.png" alt="Fridge Repair">
-      <h3>Fridge Repair</h3>
-      <p>Cooling issues? We fix all brands with genuine parts and quick service.</p>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="https://i.ibb.co/sdv3G0VF/Screenshot-2025-06-27-195856.png" alt="Fridge Repair">
+        <h3>Fridge Repair</h3>
+        <p>Cooling issues? We fix all brands with genuine parts and quick service.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://i.ibb.co/pvBL8p2C/Screenshot-2025-06-27-195925.png" alt="Washing Machine Repair">
+        <h3>Washing Machine Repair</h3>
+        <p>Top-load or front-load, we handle motor, drum, and panel issues with care.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://i.ibb.co/bR2JXgJs/Screenshot-2025-06-27-200004.png" alt="Microwave Repair">
+        <h3>Microwave Repair</h3>
+        <p>Heating issues, buttons not working? We repair it all with warranty.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="service-card">
-      <img src="https://i.ibb.co/ZpSnnf3H/file-00000000127461f89eb3f4cbd8c02928.png" alt="Washing Machine Repair">
-      <h3>Washing Machine Repair</h3>
-      <p>Top-load or front-load, we handle motor, drum, and panel issues with care.</p>
+  <section style="background:#e8f7f1">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      <strong>Ramesh P. – Shivajinagar</strong>
+      <p>Called them for a fridge issue. Quick response, fixed the problem the same day. Highly professional!</p>
     </div>
-
-    <div class="service-card">
-      <img src="https://i.ibb.co/zHsDPVKz/file-00000000566c61fd8269ec19c0ca760e.png" alt="Microwave Repair">
-      <h3>Microwave Repair</h3>
-      <p>Heating issues, buttons not working? We repair it all with warranty.</p>
+    <div class="reviews">
+      <strong>Priya M. – Kothrud</strong>
+      <p>My washing machine was dead, and they revived it like magic! Honest pricing and great attitude.</p>
     </div>
+    <div class="reviews">
+      <strong>Asif K. – Hadapsar</strong>
+      <p>Very knowledgeable team. My microwave had strange sparks, but they fixed it perfectly. Recommended!</p>
+    </div>
+  </section>
 
-  </div>
-</section>
-
-<section class="reviews">
-  <h2>Customer Reviews</h2>
-
-  <div class="review-card">
-    <strong>Ramesh P. – Shivajinagar</strong>
-    <p>Called them for a fridge issue. Quick response, fixed the problem the same day. Highly professional!</p>
-  </div>
-
-  <div class="review-card">
-    <strong>Priya M. – Kothrud</strong>
-    <p>My washing machine was dead, and they revived it like magic! Honest pricing and great attitude.</p>
-  </div>
-
-  <div class="review-card">
-    <strong>Asif K. – Hadapsar</strong>
-    <p>Very knowledgeable team. My microwave had strange sparks, but they fixed it perfectly. Recommended!</p>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section style="background-color:#0a1b2a; color:white; padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">
-  <h2 style="color: #f4b400;">Contact</h2>
-  <p>📞 <strong>+91 7498612341</strong></p>
-  <p>🕒 9:00AM – 9:00PM (Mon – Sun)</p>
-  <p>📧 harshhar932259@gmail.com</p>
-</section>
-
-<footer>
-  <p>Serving Pune since 2009 | &copy; 2025 Pune Home Appliance Services</p>
-</footer>
-
+  <footer>
+    <h2>Contact Us</h2>
+    <p>📞 Phone: <a href="tel:+917498612341">+91 74986 12341</a><br>
+       📧 Email: <a href="mailto:puneapplication76@gmail.com">puneapplication76@gmail.com</a></p>
+    <p>We are available 7 days a week. Contact us anytime between 9AM to 9PM.</p>
+  </footer>
 </body>
 </html>
